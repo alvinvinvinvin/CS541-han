@@ -1,0 +1,28 @@
+#
+# To compile the program use 'make'
+# (Do not type the 'shell$')
+#
+shell$ make
+gcc -o finput -Wall -g -O0 finput.c
+gcc -o calc -Wall -g -O0 calc.c
+shell$
+
+#
+# To run the program 
+#
+shell$ ./finput tests/test1.txt
+...
+shell$
+
+# Or
+shell& ./calc tests/test1.txt
+...
+shell$
+
+#
+# To cleanup the directory use 'make clean'
+#
+shell$ make clean
+rm -f finput calc
+rm -f -rf *.o *.dSYM
+shell$

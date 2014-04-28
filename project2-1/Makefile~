@@ -1,0 +1,11 @@
+CC=gcc
+CFLAGS=-Wall -g -O0
+PROGS=test1
+
+all: $(PROGS)
+
+test: test1.c
+	$(CC) -o test1 test1.c $(CFLAGS)
+clean:
+	$(RM) $(PROGS)
+	$(RM) -rf *.o *.dSYM
